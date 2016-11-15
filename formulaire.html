@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="style/main.css"/>
+    <link rel="stylesheet" href="style/jquery-ui.min.css"/>
+    <link rel="stylesheet" href="style/main_for.css"/>
+    <link rel="stylesheet" href="style/formulaire.css"/>
+
+
+</head>
+<body>
+<div id="wrapper">
+    <h2>Les formulaires</h2>
+    <div id="contenu">
+        <form id="form" name="form">
+            <div>
+                <label for="nom">Nom:</label>
+                <input name="nom" id="nom" type="text"/>
+            </div>
+            <div>
+                <label for="email">Courriel:</label>
+                <input name="email" id="email" type="text"/>
+            </div>
+            <div>
+                <label for="website">Site web:</label>
+                <input name="website" id="website" type="text"/>
+            </div>
+            <div>
+                <label for="date_commande">Date commande:</label>
+                <input type="text" name="date_commande" id="date_commande"/>
+            </div>
+            <div>
+                <label for="sexe_h">Homme:</label>
+                <input type="radio" name="sexe" id="sexe_h" value="sexe_h"/>
+                <br/>
+                <label for="sexe_f">Femme:</label>
+                <input type="radio" name="sexe" id="sexe_f" value="sexe_f"/>
+            </div>
+            <div>
+                <label for="ville">Ville:</label>
+                <select name="ville" id="ville">
+                    <option value="-1">Choisir...</option>
+                    <option value="mo">Montréal</option>
+                    <option value="qc">Québec</option>
+                    <option value="ga">Gâtineau</option>
+                    <option value="sh">Sherbrooke</option>
+                </select>
+
+            </div>
+
+            <div>
+                <label for="commentaire">Commentaire:</label>
+                <textarea rows="10" cols="50" name="commentaire" id="commentaire">Valeur par défaut dans le content de l'élément textarea</textarea>
+            </div>
+            <div>
+                <label for="accepte">J'accepte les conditions:</label>
+                <input type="checkbox" name="accepte" id="accepte" type="text" value="accepte"/>
+            </div>
+            <div>
+                <input type="submit" value="Réserver"/>
+            </div>
+        </form>
+
+        <a href="index.html">Retour a l'index</a>
+    </div>
+</div>
+
+
+<script src="script/P86_TP_forfaits.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="script/main.js"></script>
+<script src="script/formulaire.js"></script>
+</body>
+</html>
